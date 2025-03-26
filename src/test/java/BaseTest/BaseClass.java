@@ -15,7 +15,7 @@ import com.aventstack.extentreports.ExtentTest;
 
 public class BaseClass {
 		
-	//TOKEN = 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
+	//TOKEN = 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
 	
 		public static WebDriver driver;
 		public static FileInputStream fis1;
