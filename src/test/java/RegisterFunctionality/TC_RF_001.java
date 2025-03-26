@@ -10,14 +10,14 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class TC_RF_001 {
+import BaseTest.BaseClass;
+
+public class TC_RF_001 extends BaseClass{
 	@Test
 	public void ValidateRegisteringAnAccoiuntByFillingMandatoryFields() {
 		System.setProperty("webdriver.edge.driver","C:\\Users\\mukesh.ganivada\\Downloads\\edgedriver_win64 (4)\\msedgedriver.exe");
 
-		EdgeDriver driver= new EdgeDriver();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
+	
 		driver.navigate().to("https://tutorialsninja.com/demo/");
 
 		driver.findElement(By.xpath("//li//a[@title='My Account']")).click();

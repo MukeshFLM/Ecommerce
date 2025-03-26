@@ -39,6 +39,10 @@ public class RegisterPage {
 	@FindBy(xpath = "//input[@type='submit']")
 	WebElement Submit;
 	
+	public static void EnterTheFields(String EnterFirstName, String EnterLastName, String EnterEmail, int EnterTelephone, String EnterInputPassword, String EnterConfirmPassword) {
+	
+		
+	}
 	
 
 }

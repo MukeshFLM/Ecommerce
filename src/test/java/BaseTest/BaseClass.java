@@ -15,6 +15,8 @@ import com.aventstack.extentreports.ExtentTest;
 
 public class BaseClass {
 		
+	//TOKEN = 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
+	
 		public static WebDriver driver;
 		public static FileInputStream fis1;
 		public static Properties configProp;
@@ -35,13 +37,14 @@ public class BaseClass {
 			
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);		
 			
+			driver.navigate().to("https://tutorialsninja.com/demo/");
 		}
 		
 		@AfterMethod
 		public void teardown()
 		{
 			
-			driver.quit();
+			driver.close();
 			
 		}
 		
