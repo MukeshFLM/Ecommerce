@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\mukesh.ganivada\AppData\Local\Temp\testng-eclipse--440426927\testng-customsuite.xml</span>
+                    <span>C:\Users\mukesh.ganivada\AppData\Local\Temp\testng-eclipse-1360530051\testng-customsuite.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -102,7 +102,7 @@
                     <div class="method-list-content failed suite-Default_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="RegisterFunctionality.TC_RF_010" class="method navigator-link" hash-for-method="ValidateRegisteringByProvidingInvalidEmailAddress">ValidateRegisteringByProvidingInvalidEmailAddress</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Default_suite" title="RegisterFunctionality.TC_RF_011" class="method navigator-link" hash-for-method="RegisteringAnAccountByProvidingInvalidPhoneNumber">RegisteringAnAccountByProvidingInvalidPhoneNumber</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Default_suite -->
@@ -120,18 +120,38 @@
           <div class="suite-Default_suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">RegisterFunctionality.TC_RF_010</span>
+              <span class="class-name">RegisterFunctionality.TC_RF_011</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="ValidateRegisteringByProvidingInvalidEmailAddress">
-                  </a> <!-- ValidateRegisteringByProvidingInvalidEmailAddress -->
-                  <span class="method-name">ValidateRegisteringByProvidingInvalidEmailAddress</span>
-                  <div class="stack-trace">java.lang.AssertionError: The following asserts failed:
-	expected [false] but found [true]
-	at org.testng.asserts.SoftAssert.assertAll(SoftAssert.java:43)
-	at RegisterFunctionality.TC_RF_010.ValidateRegisteringByProvidingInvalidEmailAddress(TC_RF_010.java:74)
+                  <a name="RegisteringAnAccountByProvidingInvalidPhoneNumber">
+                  </a> <!-- RegisteringAnAccountByProvidingInvalidPhoneNumber -->
+                  <span class="method-name">RegisteringAnAccountByProvidingInvalidPhoneNumber</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//input[@id=&apos;input-telephone&apos;]/following-sibling::div&quot;}
+  (Session info: MicrosoftEdge=134.0.3124.85)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: &apos;4.0.0-alpha-7&apos;, revision: &apos;de8579b6d5&apos;
+System info: host: &apos;TVMATP567799L&apos;, ip: &apos;10.219.49.72&apos;, os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.2&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 134.0.3124.85, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:62294}, msedge: {msedgedriverVersion: 134.0.3124.85 (4b32110e83d3..., userDataDir: C:\Users\mukesh.ganivada\Ap...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 994ddaa66d23c32ba47adac7470632f4
+*** Element info: {Using=xpath, value=//input[@id=&apos;input-telephone&apos;]/following-sibling::div}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:379)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)
+	at RegisterFunctionality.TC_RF_011.RegisteringAnAccountByProvidingInvalidPhoneNumber(TC_RF_011.java:39)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -165,7 +185,7 @@
         </div> <!-- panel Default_suite -->
         <div panel-name="test-xml-Default_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\mukesh.ganivada\AppData\Local\Temp\testng-eclipse--440426927\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\mukesh.ganivada\AppData\Local\Temp\testng-eclipse-1360530051\testng-customsuite.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -174,7 +194,7 @@
 &lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;RegisterFunctionality.TC_RF_010&quot;/&gt;
+      &lt;class name=&quot;RegisterFunctionality.TC_RF_011&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Default test --&gt;
 &lt;/suite&gt; &lt;!-- Default suite --&gt;
@@ -216,14 +236,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'ValidateRegisteringByProvidingInvalidEmailAddress')
-data.setCell(0, 2, 'RegisterFunctionality.TC_RF_010')
-data.setCell(0, 3, 29037);
+data.setCell(0, 1, 'RegisteringAnAccountByProvidingInvalidPhoneNumber')
+data.setCell(0, 2, 'RegisterFunctionality.TC_RF_011')
+data.setCell(0, 3, 13984);
 window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 29 seconds</span>
+              <span class="suite-total-time">Total running time: 13 seconds</span>
               <div id="times-div-Default_suite">
               </div> <!-- times-div-Default_suite -->
             </div> <!-- times-div -->
@@ -249,20 +269,20 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">RegisterFunctionality.TC_RF_010</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">RegisterFunctionality.TC_RF_011</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
-                <span class="method-name">setUp(public void RegisterFunctionality.TC_RF_010.ValidateRegisteringByProvidingInvalidEmailAddress() thro...)</span>
+                <span class="method-name">setUp(public void RegisterFunctionality.TC_RF_011.RegisteringAnAccountByProvidingInvalidPhoneNumber())</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">ValidateRegisteringByProvidingInvalidEmailAddress</span>
-                <span class="method-start">6232 ms</span>
+                <span class="method-name">RegisteringAnAccountByProvidingInvalidPhoneNumber</span>
+                <span class="method-start">10317 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">teardown</span>
-                <span class="method-start">35269 ms</span>
+                <span class="method-start">24304 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

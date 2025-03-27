@@ -12,7 +12,7 @@ public class TC_RF_006 extends BaseClass{
   @Test
   public void ValidateRegisteringAnAccountWhenNoOptionIsSelected(){
 	  
-	  driver.findElement(By.xpath("//li//a[@title='My Account']")).click();
+	    driver.findElement(By.xpath("//li//a[@title='My Account']")).click();
 		driver.findElement(By.linkText("Register")).click();
 		driver.findElement(By.id("input-firstname")).sendKeys("Mukesh");
 		driver.findElement(By.id("input-email")).sendKeys(RandomGmailCreation());
