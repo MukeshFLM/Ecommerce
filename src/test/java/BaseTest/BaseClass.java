@@ -10,26 +10,24 @@ import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 
-import com.aventstack.extentreports.ExtentReports;
-import com.aventstack.extentreports.ExtentTest;
+
 
 public class BaseClass {
 		
-	//TOKEN = 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
+	//TOKEN = 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
 	
 		public static WebDriver driver;
 		public static FileInputStream fis1;
 		public static Properties configProp;
 		public static FileInputStream fis2;
 		public static Properties locatorsProp;
-		public static ExtentReports reports;
-		public static ExtentTest test;
+		
 		
 		@BeforeMethod
 		public void setUp(Method method)
 		{
 			
-			System.setProperty("webdriver.edge.driver","C:\\Users\\mukesh.ganivada\\Downloads\\edgedriver_win64 (4)\\msedgedriver.exe");
+			System.setProperty("webdriver.edge.driver","C:\\Users\\mukesh.ganivada\\Downloads\\edgedriver_win64 (6)\\msedgedriver.exe");
 			 
 			driver=new EdgeDriver();	
 			

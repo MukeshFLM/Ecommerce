@@ -1,6 +1,6 @@
 package RegisterFunctionality;
 
-import static org.junit.Assert.assertTrue;
+
 
 import java.util.Date;
 
