@@ -5,8 +5,12 @@
   <version>0.0.1-SNAPSHOT</version>
   <name>Opencart</name>
   
-  <dependencies>
+   <dependencies>
+   
+   
 	<dependency>
+	
+	
 <groupId>org.seleniumhq.selenium</groupId>
 <artifactId>selenium-java</artifactId>
 <version>4.0.0-alpha-7</version>
@@ -91,7 +95,7 @@
 <dependency>
 <groupId>ru.yandex.qatools.ashot</groupId>
 <artifactId>ashot</artifactId>
-<version>1.5.3</version>
+<version>1.5.4</version>
 </dependency>
  
 <dependency>
@@ -144,5 +148,4 @@
   
  
 </dependencies>
-
 </project>
