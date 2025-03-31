@@ -9,6 +9,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import BaseTest.BaseClass;
+import CommonUtils.RandomGmailCreation;
 
 public class TC_RF_005 extends BaseClass{
 	@Test
@@ -17,7 +18,7 @@ public class TC_RF_005 extends BaseClass{
 		driver.findElement(By.xpath("//li//a[@title='My Account']")).click();
 		driver.findElement(By.linkText("Register")).click();
 		driver.findElement(By.id("input-firstname")).sendKeys("Mukesh");
-		driver.findElement(By.id("input-email")).sendKeys(RandomGmailCreation());
+		driver.findElement(By.id("input-email")).sendKeys(RandomGmailCreation.GmailCreation());
 		driver.findElement(By.id("input-lastname")).sendKeys("Ganivada");
 		driver.findElement(By.id("input-telephone")).sendKeys("6300476285");
 		driver.findElement(By.id("input-password")).sendKeys("Mukesh1000");
@@ -38,8 +39,6 @@ public class TC_RF_005 extends BaseClass{
 		
 	
 	}
-	public String RandomGmailCreation() {
-		return new Date().toString().replaceAll("\\s","").replaceAll("\\:","")+"@gmail.com";
-	}
+	
 
 }

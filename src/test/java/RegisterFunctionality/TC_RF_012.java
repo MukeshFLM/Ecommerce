@@ -1,37 +1,38 @@
 package RegisterFunctionality;
 
-import static org.testng.Assert.assertEquals;
-
 import java.time.Duration;
 import java.util.Date;
 
 import org.openqa.selenium.By;
-import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import BaseTest.BaseClass;
 import CommonUtils.RandomGmailCreation;
 
-public class TC_RF_001 extends BaseClass{
-	@Test
-	public void ValidateRegisteringAnAccoiuntByFillingMandatoryFields() {
-		System.setProperty("webdriver.edge.driver","C:\\Users\\mukesh.ganivada\\Downloads\\edgedriver_win64 (4)\\msedgedriver.exe");
-
-	
-		driver.navigate().to("https://tutorialsninja.com/demo/");
+public class TC_RF_012 extends BaseClass{
+  @Test
+  public void VerifyRegisteringAnAccountByUsingTheKeyboardKeys() {
+	  driver.navigate().to("https://tutorialsninja.com/demo/");
 
 		driver.findElement(By.xpath("//li//a[@title='My Account']")).click();
 		driver.findElement(By.linkText("Register")).click();
-		driver.findElement(By.id("input-firstname")).sendKeys("Mukesh");
-		driver.findElement(By.id("input-email")).sendKeys(RandomGmailCreation.GmailCreation());
-		driver.findElement(By.id("input-lastname")).sendKeys("Ganivada");
-		driver.findElement(By.id("input-telephone")).sendKeys("6300476285");
-		driver.findElement(By.id("input-password")).sendKeys("Mukesh1000");
-		driver.findElement(By.name("confirm")).sendKeys("Mukesh1000");
-		driver.findElement(By.xpath("//input[@type='checkbox']")).click();
-		driver.findElement(By.xpath("//input[@type='submit']")).click();
-
+		Actions action = new Actions(driver);
+		for(int i=1; i<= 23; i++) {
+			action.sendKeys(Keys.TAB).perform();
+		}
+		action.sendKeys("Mukesh").pause(Duration.ofSeconds(1))
+		.sendKeys(Keys.TAB).sendKeys("ganivada").pause(Duration.ofSeconds(1))
+		.sendKeys(Keys.TAB).sendKeys(RandomGmailCreation.GmailCreation()).pause(Duration.ofSeconds(1))
+		.sendKeys(Keys.TAB).sendKeys("6300288129").pause(Duration.ofSeconds(1))
+		.sendKeys(Keys.TAB).sendKeys("Mukesh1234").pause(Duration.ofSeconds(1))
+		.sendKeys(Keys.TAB).sendKeys("Mukesh1234").pause(Duration.ofSeconds(1))
+		.sendKeys(Keys.TAB).sendKeys(Keys.LEFT).sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.SPACE).sendKeys(Keys.ENTER).build().perform();
+		
+		
+		
 		Assert.assertTrue(driver.findElement(By.linkText("Logout")).isDisplayed());
 
 		String ExpectedHeading = "Your Account Has Been Created!";
@@ -54,8 +55,7 @@ public class TC_RF_001 extends BaseClass{
 
 		Assert.assertTrue(driver.findElement(By.linkText("Account")).isDisplayed());
 
-		driver.quit();
+		
 	}
 	
-
 }
