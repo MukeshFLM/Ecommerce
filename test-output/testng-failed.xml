@@ -3,7 +3,18 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test name="Default test" verbose="2">
     <classes>
-      <class name="RegisterFunctionality.TC_RF_012"/>
+      <class name="RegisterFunctionality.TC_RF_014"/>
     </classes>
   </test> <!-- Default test -->
+  <test name="Default test(failed)">
+    <classes>
+      <class name="RegisterFunctionality.TC_RF_014">
+        <methods>
+          <include name="VerifyAllTheMandatoryFieldsInTheRegisterAccountPageAreMarkedWithRedColorSymbol"/>
+          <include name="teardown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- RegisterFunctionality.TC_RF_014 -->
+    </classes>
+  </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
