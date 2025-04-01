@@ -1,44 +1,45 @@
 package RegisterFunctionality;
 
-
-
 import java.util.Date;
 
 import org.openqa.selenium.By;
 import org.testng.Assert;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import BaseTest.BaseClass;
 import CommonUtils.RandomGmailCreation;
 
-public class TC_RF_005 extends BaseClass{
-	@Test
-	public void ValidateRegisteringAnAccountWhenYesOptionIsSelected() {
+public class TC_RF_011 extends BaseClass{
+	
+	@AfterMethod 
+	public void teardown() {
+		
+		driver.quit();
+		
+	}
+  @Test
+  public void RegisteringAnAccountByProvidingInvalidPhoneNumber() {
+	  
+	  driver.navigate().to("https://tutorialsninja.com/demo/");
 
 		driver.findElement(By.xpath("//li//a[@title='My Account']")).click();
 		driver.findElement(By.linkText("Register")).click();
 		driver.findElement(By.id("input-firstname")).sendKeys("Mukesh");
 		driver.findElement(By.id("input-email")).sendKeys(RandomGmailCreation.GmailCreation());
 		driver.findElement(By.id("input-lastname")).sendKeys("Ganivada");
-		driver.findElement(By.id("input-telephone")).sendKeys("6300476285");
+		driver.findElement(By.id("input-telephone")).sendKeys("abcde");
 		driver.findElement(By.id("input-password")).sendKeys("Mukesh1000");
 		driver.findElement(By.name("confirm")).sendKeys("Mukesh1000");
-		driver.findElement(By.xpath("//input[@name='newsletter'][@value='1']")).click();
 		driver.findElement(By.xpath("//input[@type='checkbox']")).click();
 		driver.findElement(By.xpath("//input[@type='submit']")).click();
 		
-		Assert.assertEquals("Congratulations! Your new account has been successfully created!", driver.findElement(By.xpath("//div//p[starts-with(text(),'Congratulations!')]")).getText());
+		SoftAssert sa1 = new SoftAssert();
+		sa1.assertEquals("Telephone number does not appear to be valid", driver.findElement(By.xpath("//input[@id='input-telephone']/following-sibling::div")).getText() );
 		
-		driver.findElement(By.linkText("Continue")).click();
-		
-		Assert.assertTrue(driver.findElement(By.linkText("Account")).isDisplayed());
-		
-		driver.findElement(By.linkText("Subscribe / unsubscribe to newsletter")).click();
-		
-		Assert.assertTrue(driver.findElement(By.xpath("//input[@name='newsletter'][@value='1']")).isSelected());
-		
-	
-	}
-	
-
+		sa1.assertAll();
+  }
+ 
 }
