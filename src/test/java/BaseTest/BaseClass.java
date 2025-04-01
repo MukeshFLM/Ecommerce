@@ -14,7 +14,7 @@ import org.testng.annotations.BeforeMethod;
 
 public class BaseClass {
 		
-	//TOKEN = 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
+	//TOKEN = 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
 	
 		public static WebDriver driver;
 		public static FileInputStream fis1;
