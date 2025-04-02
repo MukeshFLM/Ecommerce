@@ -42,7 +42,7 @@ public class BaseClass {
 		public void teardown()
 		{
 			
-			driver.close();
+			driver.quit();
 			
 		}
 		
