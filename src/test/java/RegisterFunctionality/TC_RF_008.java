@@ -13,7 +13,7 @@ public class TC_RF_008 extends BaseClass{
   @Test
   public void ValidateRegisteringAnAccountByEnteringDifferentPasswordsIntoPasswordAndPasswordConfirmFields() {
 	  
-	  driver.navigate().to("https://tutorialsninja.com/demo/");
+	 
 
 		driver.findElement(By.xpath("//li//a[@title='My Account']")).click();
 		driver.findElement(By.linkText("Register")).click();
