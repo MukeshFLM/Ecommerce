@@ -18,7 +18,7 @@ public class TC_RF_017 extends BaseClass{
   @Test(dataProvider = "MultiplePasswords")
   public void VerifyWhetherThePasswordFieldsInTheRegisterAccountPageAreFollowingPasswordComplexityStandards(String EnterPassword) {
   
-	  driver.findElement(By.xpath("//li//a[@title='My Account']")).click();
+	  	driver.findElement(By.xpath("//li//a[@title='My Account']")).click();
 		driver.findElement(By.linkText("Register")).click();
 		driver.findElement(By.id("input-firstname")).sendKeys("Mukesh");
 		driver.findElement(By.id("input-email")).sendKeys(RandomGmailCreation.GmailCreation());
