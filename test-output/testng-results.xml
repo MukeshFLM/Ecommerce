@@ -1,32 +1,243 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results total="1" passed="1" failed="0" skipped="0">
+<testng-results total="3" passed="0" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-04T06:39:46Z" name="Default suite" finished-at="2025-04-04T06:39:53Z" duration-ms="6727">
+  <suite started-at="2025-04-10T13:08:37Z" name="Default suite" finished-at="2025-04-10T13:08:58Z" duration-ms="20681">
     <groups>
     </groups>
-    <test started-at="2025-04-04T06:39:46Z" name="Default test" finished-at="2025-04-04T06:39:53Z" duration-ms="6727">
-      <class name="RegisterFunctionality.TC_RF_020">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:RegisterFunctionality.TC_RF_020@1ed4ae0f]" started-at="2025-04-04T12:09:46Z" name="setUp" finished-at="2025-04-04T12:09:51Z" duration-ms="5037" status="PASS">
+    <test started-at="2025-04-10T13:08:37Z" name="Default test" finished-at="2025-04-10T13:08:58Z" duration-ms="20681">
+      <class name="RegisterFunctionality.TC_RF_027">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:RegisterFunctionality.TC_RF_027@cb0755b]" started-at="2025-04-10T18:38:37Z" name="setUp" finished-at="2025-04-10T18:38:44Z" duration-ms="7404" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void RegisterFunctionality.TC_RF_020.VerifyWhetherThePrivacyPolicyCheckboxOptionIsNotSelectedByDefault()]]>
+                <![CDATA[public void RegisterFunctionality.TC_RF_027.VerifyRegisterAccountFunctionalityInAllTheSupportedEnvironments(java.lang.String)]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="VerifyWhetherThePrivacyPolicyCheckboxOptionIsNotSelectedByDefault()[pri:0, instance:RegisterFunctionality.TC_RF_020@1ed4ae0f]" started-at="2025-04-04T12:09:51Z" name="VerifyWhetherThePrivacyPolicyCheckboxOptionIsNotSelectedByDefault" finished-at="2025-04-04T12:09:53Z" duration-ms="1263" status="PASS">
+        <test-method signature="VerifyRegisterAccountFunctionalityInAllTheSupportedEnvironments(java.lang.String)[pri:0, instance:RegisterFunctionality.TC_RF_027@cb0755b]" started-at="2025-04-10T18:38:44Z" name="VerifyRegisterAccountFunctionalityInAllTheSupportedEnvironments" data-provider="CrossBrowserTesting" finished-at="2025-04-10T18:38:44Z" duration-ms="22" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalStateException">
+            <message>
+              <![CDATA[The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalStateException: The path to the driver executable The path to the driver executable must be set by the webdriver.chrome.driver system property; for more information, see https://github.com/SeleniumHQ/selenium/wiki/ChromeDriver. The latest version can be downloaded from http://chromedriver.storage.googleapis.com/index.html
+	at org.openqa.selenium.internal.Require$StateChecker.nonNull(Require.java:254)
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:142)
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:37)
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:222)
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:405)
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:119)
+	at org.openqa.selenium.chrome.ChromeDriver.<init>(ChromeDriver.java:105)
+	at RegisterFunctionality.TC_RF_027.VerifyRegisterAccountFunctionalityInAllTheSupportedEnvironments(TC_RF_027.java:22)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalStateException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- VerifyWhetherThePrivacyPolicyCheckboxOptionIsNotSelectedByDefault -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:RegisterFunctionality.TC_RF_020@1ed4ae0f]" started-at="2025-04-04T12:09:53Z" name="teardown" finished-at="2025-04-04T12:09:53Z" duration-ms="416" status="PASS">
+        </test-method> <!-- VerifyRegisterAccountFunctionalityInAllTheSupportedEnvironments -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:RegisterFunctionality.TC_RF_027@cb0755b]" started-at="2025-04-10T18:38:44Z" name="teardown" finished-at="2025-04-10T18:38:45Z" duration-ms="319" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- RegisterFunctionality.TC_RF_020 -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:RegisterFunctionality.TC_RF_027@cb0755b]" started-at="2025-04-10T18:38:45Z" name="setUp" finished-at="2025-04-10T18:38:50Z" duration-ms="5513" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void RegisterFunctionality.TC_RF_027.VerifyRegisterAccountFunctionalityInAllTheSupportedEnvironments(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifyRegisterAccountFunctionalityInAllTheSupportedEnvironments(java.lang.String)[pri:0, instance:RegisterFunctionality.TC_RF_027@cb0755b]" started-at="2025-04-10T18:38:50Z" name="VerifyRegisterAccountFunctionalityInAllTheSupportedEnvironments" data-provider="CrossBrowserTesting" finished-at="2025-04-10T18:38:50Z" duration-ms="123" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: XP
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'TVMATP567799L', ip: '192.168.29.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: FirefoxDriver]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Cannot find firefox binary in PATH. Make sure firefox is installed. OS appears to be: XP
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'TVMATP567799L', ip: '192.168.29.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.FirefoxBinary.<init>(FirefoxBinary.java:95)
+	at java.base/java.util.Optional.orElseGet(Optional.java:364)
+	at org.openqa.selenium.firefox.FirefoxOptions.getBinary(FirefoxOptions.java:199)
+	at org.openqa.selenium.firefox.GeckoDriverService$Builder.withOptions(GeckoDriverService.java:180)
+	at org.openqa.selenium.firefox.FirefoxDriver.toExecutor(FirefoxDriver.java:207)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:177)
+	at org.openqa.selenium.firefox.FirefoxDriver.<init>(FirefoxDriver.java:155)
+	at RegisterFunctionality.TC_RF_027.VerifyRegisterAccountFunctionalityInAllTheSupportedEnvironments(TC_RF_027.java:25)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyRegisterAccountFunctionalityInAllTheSupportedEnvironments -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:RegisterFunctionality.TC_RF_027@cb0755b]" started-at="2025-04-10T18:38:50Z" name="teardown" finished-at="2025-04-10T18:38:51Z" duration-ms="334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:RegisterFunctionality.TC_RF_027@cb0755b]" started-at="2025-04-10T18:38:51Z" name="setUp" finished-at="2025-04-10T18:38:54Z" duration-ms="3065" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void RegisterFunctionality.TC_RF_027.VerifyRegisterAccountFunctionalityInAllTheSupportedEnvironments(java.lang.String)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="VerifyRegisterAccountFunctionalityInAllTheSupportedEnvironments(java.lang.String)[pri:0, instance:RegisterFunctionality.TC_RF_027@cb0755b]" started-at="2025-04-10T18:38:54Z" name="VerifyRegisterAccountFunctionalityInAllTheSupportedEnvironments" data-provider="CrossBrowserTesting" finished-at="2025-04-10T18:38:57Z" duration-ms="3509" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[edge]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//li//a[@title='My Account']"}
+  (Session info: MicrosoftEdge=135.0.3179.54)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'TVMATP567799L', ip: '192.168.29.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 135.0.3179.54, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:50149}, msedge: {msedgedriverVersion: 134.0.3124.85 (4b32110e83d3..., userDataDir: C:\Users\mukesh.ganivada\Ap...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7718473ec2d27f184841810cf8f491bc
+*** Element info: {Using=xpath, value=//li//a[@title='My Account']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//li//a[@title='My Account']"}
+  (Session info: MicrosoftEdge=135.0.3179.54)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.0.0-alpha-7', revision: 'de8579b6d5'
+System info: host: 'TVMATP567799L', ip: '192.168.29.67', os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.2'
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 135.0.3179.54, fedcm:accounts: true, javascriptEnabled: true, ms:edgeOptions: {debuggerAddress: localhost:50149}, msedge: {msedgedriverVersion: 134.0.3124.85 (4b32110e83d3..., userDataDir: C:\Users\mukesh.ganivada\Ap...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 7718473ec2d27f184841810cf8f491bc
+*** Element info: {Using=xpath, value=//li//a[@title='My Account']}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:196)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:129)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:123)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:501)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:332)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:379)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:312)
+	at RegisterFunctionality.TC_RF_027.VerifyRegisterAccountFunctionalityInAllTheSupportedEnvironments(TC_RF_027.java:32)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:643)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:820)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1128)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyRegisterAccountFunctionalityInAllTheSupportedEnvironments -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:RegisterFunctionality.TC_RF_027@cb0755b]" started-at="2025-04-10T18:38:57Z" name="teardown" finished-at="2025-04-10T18:38:58Z" duration-ms="370" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- RegisterFunctionality.TC_RF_027 -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
