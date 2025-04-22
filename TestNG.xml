@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite>
-<suite name="Suite">
-  
-  <test thread-count="5" name="Test">
-    <classes>
-      <class name="RegisterFunctionality.TC_RF_001"/>
-      <class name="RegisterFunctionality.TC_RF_004"/>
-      <class name="RegisterFunctionality.TC_RF_005"/>
-      <class name="RegisterFunctionality.TC_RF_006"/>
-      <class name="RegisterFunctionality.TC_RF_007"/>
-      <class name="RegisterFunctionality.TC_RF_008"/>
-      <class name="RegisterFunctionality.TC_RF_009"/>
-      <class name="RegisterFunctionality.TC_RF_010"/>
-      <class name="RegisterFunctionality.TC_RF_011"/>
-      <class name="RegisterFunctionality.TC_RF_012"/>
-      <class name="RegisterFunctionality.TC_RF_013"/>
-      <class name="RegisterFunctionality.TC_RF_014"/>
-       <class name="RegisterFunctionality.TC_RF_015"/>
-      <class name="RegisterFunctionality.TC_RF_016"/>
-      <class name="RegisterFunctionality.TC_RF_017"/>
-    </classes>
-  </test> <!-- Test -->
+<suite name="Cross Browser Testing" parallel="tests"
+	thread-count="3">
+
+<!-- test for chrome browser -->
+
+	<test name="Chrome test">
+		<parameter name="browser" value="chrome"/>
+		<classes>
+			<class name="TC_RF_026"/>
+		</classes>
+	</test>
+	<test name="FireFox test">
+		<parameter name="browser" value="firefox"/>
+		<classes>
+			<class name="TC_RF_026"/>
+		</classes>
+	</test>
+	<test name="Edge test">
+		<parameter name="browser" value="Edge"/>
+		<classes>
+			<class name="TC_RF_026"/>
+		</classes>
+	</test>
+	
+	
+	
 </suite> <!-- Suite -->
