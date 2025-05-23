@@ -4,9 +4,14 @@ import static org.testng.Assert.assertEquals;
 
 import java.time.Duration;
 import java.util.Date;
+import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.NoAlertPresentException;
+import org.openqa.selenium.SearchContext;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.support.ui.FluentWait;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -19,7 +24,7 @@ public class TC_RF_001 extends BaseClass{
 		System.setProperty("webdriver.edge.driver","C:\\Users\\mukesh.ganivada\\Downloads\\edgedriver_win64 (4)\\msedgedriver.exe");
 
 	
-		driver.navigate().to("https://tutorialsninja.com/demo/");
+		//driver.navigate().to("https://tutorialsninja.com/demo/");
 
 		driver.findElement(By.xpath("//li//a[@title='My Account']")).click();
 		driver.findElement(By.linkText("Register")).click();
@@ -55,6 +60,10 @@ public class TC_RF_001 extends BaseClass{
 		Assert.assertTrue(driver.findElement(By.linkText("Account")).isDisplayed());
 
 		driver.quit();
+		
+		
+		
+		
 	}
 	
 

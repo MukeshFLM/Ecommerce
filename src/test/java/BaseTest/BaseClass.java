@@ -28,7 +28,7 @@ public class BaseClass {
 		public void setUp(Method method)
 		{
 			
-			System.setProperty("webdriver.edge.driver","C:\\Users\\mukesh.ganivada\\Downloads\\edgedriver_win64 (6)\\msedgedriver.exe");
+			System.setProperty("webdriver.edge.driver","C:\\Users\\mukesh.ganivada\\Downloads\\edgedriver_win64 (7)\\msedgedriver.exe");
 			 
 			driver=new EdgeDriver();	
 			
