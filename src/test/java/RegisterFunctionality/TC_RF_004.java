@@ -6,32 +6,26 @@ import org.testng.annotations.Test;
 
 import BaseTest.BaseClass;
 
+public class TC_RF_004 extends BaseClass {
 
-public class TC_RF_004 extends BaseClass{
-  @Test
-  public void ValidateProperErrorMsgDisplayedForEmptyFields() {
-	  
-	  driver.navigate().to("https://tutorialsninja.com/demo/");
+    @Test
+    public void ValidateProperErrorMsgDisplayedForEmptyFields() {
+        getDriver().findElement(By.xpath("//li//a[@title='My Account']")).click();
+        getDriver().findElement(By.linkText("Register")).click();
+        getDriver().findElement(By.xpath("//input[@type='submit']")).click();
 
-		driver.findElement(By.xpath("//li//a[@title='My Account']")).click();
-		driver.findElement(By.linkText("Register")).click();
-		driver.findElement(By.xpath("//input[@type='submit']")).click();
-		
-		String ExpectedWarningForFirstName = "First Name must be between 1 and 32 characters!";
-		String ExpectedWarningForLastName = "Last Name must be between 1 and 32 characters!";
-		String ExpectedWarningForEmail = "E-Mail Address does not appear to be valid!";
-		String ExpectedWarningForTelephone = "Telephone must be between 3 and 32 characters!";
-		String ExpectedWarningForPassword = "Password must be between 4 and 20 characters!";
-		String ExpectedWarningForPrivacyPolicy = "Warning: You must agree to the Privacy Policy!";
-		
-		
-		Assert.assertEquals(driver.findElement(By.xpath("//div[contains(text(), 'First Name')]")).getText(), ExpectedWarningForFirstName);
-		Assert.assertEquals(driver.findElement(By.xpath("//div[contains(text(), 'Last Name')]")).getText(), ExpectedWarningForLastName);
-		Assert.assertEquals(driver.findElement(By.xpath("//div[contains(text(), 'E-Mail Address')]")).getText(), ExpectedWarningForEmail);
-		Assert.assertEquals(driver.findElement(By.xpath("//div[contains(text(), 'Telephone')]")).getText(), ExpectedWarningForTelephone);
-		Assert.assertEquals(driver.findElement(By.xpath("//div[contains(text(), 'Password')]")).getText(), ExpectedWarningForPassword);
-		Assert.assertEquals(driver.findElement(By.xpath("//div[contains(text(), 'Warning:')]")).getText(), ExpectedWarningForPrivacyPolicy);
-			
-		
-  }
+        String expectedWarningForFirstName = "First Name must be between 1 and 32 characters!";
+        String expectedWarningForLastName = "Last Name must be between 1 and 32 characters!";
+        String expectedWarningForEmail = "E-Mail Address does not appear to be valid!";
+        String expectedWarningForTelephone = "Telephone must be between 3 and 32 characters!";
+        String expectedWarningForPassword = "Password must be between 4 and 20 characters!";
+        String expectedWarningForPrivacyPolicy = "Warning: You must agree to the Privacy Policy!";
+
+        Assert.assertEquals(getDriver().findElement(By.xpath("//div[contains(text(), 'First Name')]")).getText(), expectedWarningForFirstName);
+        Assert.assertEquals(getDriver().findElement(By.xpath("//div[contains(text(), 'Last Name')]")).getText(), expectedWarningForLastName);
+        Assert.assertEquals(getDriver().findElement(By.xpath("//div[contains(text(), 'E-Mail Address')]")).getText(), expectedWarningForEmail);
+        Assert.assertEquals(getDriver().findElement(By.xpath("//div[contains(text(), 'Telephone')]")).getText(), expectedWarningForTelephone);
+        Assert.assertEquals(getDriver().findElement(By.xpath("//div[contains(text(), 'Password')]")).getText(), expectedWarningForPassword);
+        Assert.assertEquals(getDriver().findElement(By.xpath("//div[contains(text(), 'Warning:')]")).getText(), expectedWarningForPrivacyPolicy);
+    }
 }

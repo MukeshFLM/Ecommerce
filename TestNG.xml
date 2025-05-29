@@ -1,29 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite>
-<suite name="Cross Browser Testing" parallel="tests"
-	thread-count="3">
+<suite name="ParallelTests" parallel="tests" thread-count="3">
+  <test name="Test1">
+        <classes>
+            <class name="RegisterFunctionality.TC_RF_001"/>
+        </classes>
+    </test>
+    <test name="Test2">
+        <classes>
+            <class name="RegisterFunctionality.TC_RF_004"/>
+        </classes>
+    </test>
+    <test name="Test3">
+        <classes>
+            <class name="RegisterFunctionality.TC_RF_005"/>
+        </classes>
+    </test>
+  
+</suite>
 
-<!-- test for chrome browser -->
-
-	<test name="Chrome test">
-		<parameter name="browser" value="chrome"/>
-		<classes>
-			<class name="TC_RF_026"/>
-		</classes>
-	</test>
-	<test name="FireFox test">
-		<parameter name="browser" value="firefox"/>
-		<classes>
-			<class name="TC_RF_026"/>
-		</classes>
-	</test>
-	<test name="Edge test">
-		<parameter name="browser" value="Edge"/>
-		<classes>
-			<class name="TC_RF_026"/>
-		</classes>
-	</test>
 	
-	
-	
-</suite> <!-- Suite -->

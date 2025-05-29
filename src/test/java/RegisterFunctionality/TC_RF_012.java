@@ -15,11 +15,11 @@ import CommonUtils.RandomGmailCreation;
 public class TC_RF_012 extends BaseClass{
   @Test
   public void VerifyRegisteringAnAccountByUsingTheKeyboardKeys() {
-	  driver.navigate().to("https://tutorialsninja.com/demo/");
+	  getDriver().navigate().to("https://tutorialsninja.com/demo/");
 
-		driver.findElement(By.xpath("//li//a[@title='My Account']")).click();
-		driver.findElement(By.linkText("Register")).click();
-		Actions action = new Actions(driver);
+	  getDriver().findElement(By.xpath("//li//a[@title='My Account']")).click();
+	  getDriver().findElement(By.linkText("Register")).click();
+		Actions action = new Actions(getDriver());
 		for(int i=1; i<= 23; i++) {
 			action.sendKeys(Keys.TAB).perform();
 		}
@@ -33,27 +33,27 @@ public class TC_RF_012 extends BaseClass{
 		
 		
 		
-		Assert.assertTrue(driver.findElement(By.linkText("Logout")).isDisplayed());
+		Assert.assertTrue(getDriver().findElement(By.linkText("Logout")).isDisplayed());
 
 		String ExpectedHeading = "Your Account Has Been Created!";
 
-		Assert.assertEquals(driver.findElement(By.xpath("//div[@id='content']//h1")).getText(), ExpectedHeading);
+		Assert.assertEquals(getDriver().findElement(By.xpath("//div[@id='content']//h1")).getText(), ExpectedHeading);
 
 		String ActualProperDetailsOne = "Congratulations! Your new account has been successfully created!";
 		String ActualProperDetailsTwo = "You can now take advantage of member privileges to enhance your online shopping experience with us.";
 		String ActualProperDetailsThree = "If you have ANY questions about the operation of this online shop, please e-mail the store owner.";
 		String ActualProperDetailsFour = "A confirmation has been sent to the provided e-mail address. If you have not received it within the hour, please ";
 
-		String ExpectedProperDetails = driver.findElement(By.id("content")).getText();
+		String ExpectedProperDetails = getDriver().findElement(By.id("content")).getText();
 
 		Assert.assertTrue(ExpectedProperDetails.contains(ActualProperDetailsOne));
 		Assert.assertTrue(ExpectedProperDetails.contains(ActualProperDetailsTwo));
 		Assert.assertTrue(ExpectedProperDetails.contains(ActualProperDetailsThree));
 		Assert.assertTrue(ExpectedProperDetails.contains(ActualProperDetailsFour));
 
-		driver.findElement(By.linkText("Continue")).click();
+		getDriver().findElement(By.linkText("Continue")).click();
 
-		Assert.assertTrue(driver.findElement(By.linkText("Account")).isDisplayed());
+		Assert.assertTrue(getDriver().findElement(By.linkText("Account")).isDisplayed());
 
 		
 	}
