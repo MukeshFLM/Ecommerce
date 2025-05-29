@@ -17,27 +17,27 @@ public class TC_RF_011 extends BaseClass{
 	@AfterMethod 
 	public void teardown() {
 		
-		driver.quit();
+		getDriver().quit();
 		
 	}
   @Test
   public void RegisteringAnAccountByProvidingInvalidPhoneNumber() {
 	  
-	  driver.navigate().to("https://tutorialsninja.com/demo/");
+	  getDriver().navigate().to("https://tutorialsninja.com/demo/");
 
-		driver.findElement(By.xpath("//li//a[@title='My Account']")).click();
-		driver.findElement(By.linkText("Register")).click();
-		driver.findElement(By.id("input-firstname")).sendKeys("Mukesh");
-		driver.findElement(By.id("input-email")).sendKeys(RandomGmailCreation.GmailCreation());
-		driver.findElement(By.id("input-lastname")).sendKeys("Ganivada");
-		driver.findElement(By.id("input-telephone")).sendKeys("abcde");
-		driver.findElement(By.id("input-password")).sendKeys("Mukesh1000");
-		driver.findElement(By.name("confirm")).sendKeys("Mukesh1000");
-		driver.findElement(By.xpath("//input[@type='checkbox']")).click();
-		driver.findElement(By.xpath("//input[@type='submit']")).click();
+	  getDriver().findElement(By.xpath("//li//a[@title='My Account']")).click();
+	  getDriver().findElement(By.linkText("Register")).click();
+	  getDriver().findElement(By.id("input-firstname")).sendKeys("Mukesh");
+	  getDriver().findElement(By.id("input-email")).sendKeys(RandomGmailCreation.GmailCreation());
+	  getDriver().findElement(By.id("input-lastname")).sendKeys("Ganivada");
+	  getDriver().findElement(By.id("input-telephone")).sendKeys("abcde");
+	  getDriver().findElement(By.id("input-password")).sendKeys("Mukesh1000");
+	  getDriver().findElement(By.name("confirm")).sendKeys("Mukesh1000");
+	  getDriver().findElement(By.xpath("//input[@type='checkbox']")).click();
+	  getDriver().findElement(By.xpath("//input[@type='submit']")).click();
 		
 		SoftAssert sa1 = new SoftAssert();
-		sa1.assertEquals("Telephone number does not appear to be valid", driver.findElement(By.xpath("//input[@id='input-telephone']/following-sibling::div")).getText() );
+		sa1.assertEquals("Telephone number does not appear to be valid", getDriver().findElement(By.xpath("//input[@id='input-telephone']/following-sibling::div")).getText() );
 		
 		sa1.assertAll();
   }

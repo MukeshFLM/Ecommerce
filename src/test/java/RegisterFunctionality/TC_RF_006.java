@@ -13,27 +13,27 @@ public class TC_RF_006 extends BaseClass{
   @Test
   public void ValidateRegisteringAnAccountWhenNoOptionIsSelected(){
 	  
-	    driver.findElement(By.xpath("//li//a[@title='My Account']")).click();
-		driver.findElement(By.linkText("Register")).click();
-		driver.findElement(By.id("input-firstname")).sendKeys("Mukesh");
-		driver.findElement(By.id("input-email")).sendKeys(RandomGmailCreation.GmailCreation());
-		driver.findElement(By.id("input-lastname")).sendKeys("Ganivada");
-		driver.findElement(By.id("input-telephone")).sendKeys("6300476285");
-		driver.findElement(By.id("input-password")).sendKeys("Mukesh1000");
-		driver.findElement(By.name("confirm")).sendKeys("Mukesh1000");
+	  getDriver().findElement(By.xpath("//li//a[@title='My Account']")).click();
+	  getDriver().findElement(By.linkText("Register")).click();
+	  getDriver().findElement(By.id("input-firstname")).sendKeys("Mukesh");
+	  getDriver().findElement(By.id("input-email")).sendKeys(RandomGmailCreation.GmailCreation());
+	  getDriver().findElement(By.id("input-lastname")).sendKeys("Ganivada");
+	  getDriver().findElement(By.id("input-telephone")).sendKeys("6300476285");
+	  getDriver().findElement(By.id("input-password")).sendKeys("Mukesh1000");
+	  getDriver().findElement(By.name("confirm")).sendKeys("Mukesh1000");
 	
-		driver.findElement(By.xpath("//input[@type='checkbox']")).click();
-		driver.findElement(By.xpath("//input[@type='submit']")).click();
+	  getDriver().findElement(By.xpath("//input[@type='checkbox']")).click();
+	  getDriver().findElement(By.xpath("//input[@type='submit']")).click();
 		
-		Assert.assertEquals("Congratulations! Your new account has been successfully created!", driver.findElement(By.xpath("//div//p[starts-with(text(),'Congratulations!')]")).getText());
+		Assert.assertEquals("Congratulations! Your new account has been successfully created!", getDriver().findElement(By.xpath("//div//p[starts-with(text(),'Congratulations!')]")).getText());
 		
-		driver.findElement(By.linkText("Continue")).click();
+		getDriver().findElement(By.linkText("Continue")).click();
 		
-		Assert.assertTrue(driver.findElement(By.linkText("Account")).isDisplayed());
+		Assert.assertTrue(getDriver().findElement(By.linkText("Account")).isDisplayed());
 		
-		driver.findElement(By.linkText("Subscribe / unsubscribe to newsletter")).click();
+		getDriver().findElement(By.linkText("Subscribe / unsubscribe to newsletter")).click();
 		
-		Assert.assertTrue(driver.findElement(By.xpath("//input[@name='newsletter'][@value='0']")).isSelected());
+		Assert.assertTrue(getDriver().findElement(By.xpath("//input[@name='newsletter'][@value='0']")).isSelected());
 		
 	
 	}

@@ -2,27 +2,27 @@
 <testng-results total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-06T12:58:09Z" name="Default suite" finished-at="2025-05-06T12:58:21Z" duration-ms="12072">
+  <suite started-at="2025-05-29T06:14:14Z" name="Default suite" finished-at="2025-05-29T06:14:21Z" duration-ms="7616">
     <groups>
     </groups>
-    <test started-at="2025-05-06T12:58:09Z" name="Default test" finished-at="2025-05-06T12:58:21Z" duration-ms="12072">
+    <test started-at="2025-05-29T06:14:14Z" name="Default test" finished-at="2025-05-29T06:14:21Z" duration-ms="7616">
       <class name="RegisterFunctionality.TC_RF_001">
-        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:RegisterFunctionality.TC_RF_001@1ed4ae0f]" started-at="2025-05-06T18:28:09Z" name="setUp" finished-at="2025-05-06T18:28:17Z" duration-ms="8187" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.reflect.Method)[pri:0, instance:RegisterFunctionality.TC_RF_001@54c5a2ff]" started-at="2025-05-29T11:44:14Z" name="setUp" finished-at="2025-05-29T11:44:19Z" duration-ms="5035" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void RegisterFunctionality.TC_RF_001.ValidateRegisteringAnAccoiuntByFillingMandatoryFields()]]>
+                <![CDATA[public void RegisterFunctionality.TC_RF_001.ValidateRegisteringAnAccountByFillingMandatoryFields()]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="ValidateRegisteringAnAccoiuntByFillingMandatoryFields()[pri:0, instance:RegisterFunctionality.TC_RF_001@1ed4ae0f]" started-at="2025-05-06T18:28:17Z" name="ValidateRegisteringAnAccoiuntByFillingMandatoryFields" finished-at="2025-05-06T18:28:21Z" duration-ms="3867" status="PASS">
+        <test-method signature="ValidateRegisteringAnAccountByFillingMandatoryFields()[pri:0, instance:RegisterFunctionality.TC_RF_001@54c5a2ff]" started-at="2025-05-29T11:44:19Z" name="ValidateRegisteringAnAccountByFillingMandatoryFields" finished-at="2025-05-29T11:44:21Z" duration-ms="2116" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- ValidateRegisteringAnAccoiuntByFillingMandatoryFields -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:RegisterFunctionality.TC_RF_001@1ed4ae0f]" started-at="2025-05-06T18:28:21Z" name="teardown" finished-at="2025-05-06T18:28:21Z" duration-ms="0" status="PASS">
+        </test-method> <!-- ValidateRegisteringAnAccountByFillingMandatoryFields -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:RegisterFunctionality.TC_RF_001@54c5a2ff]" started-at="2025-05-29T11:44:21Z" name="teardown" finished-at="2025-05-29T11:44:21Z" duration-ms="453" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
